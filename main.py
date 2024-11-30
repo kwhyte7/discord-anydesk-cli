@@ -2,9 +2,9 @@ import discord
 import functions
 import asyncio
 
-AUTHORISED_USERS = [1099053630449008763]
-AUTHORISED_CHANNELS = [1312409264320548964]
-COMMAND_PREFIX = "!"
+AUTHORISED_USERS = ["ADD YOUR DISCORD CLIENT ID HERE AS AN INTEGER"] # the bot will only listen to these users
+AUTHORISED_CHANNELS = ["ADD DISCORD CHANNEL IDS HERE AS AN INTEGER"] # the bot will only listen to these channels.
+COMMAND_PREFIX = "!" # prefix for non terminal commands
 
 async def show_commands(temulator, message, arguments=""):
 	await message.reply("\n".join(list(COMMANDS.keys())))
